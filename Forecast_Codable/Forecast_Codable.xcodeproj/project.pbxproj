@@ -15,6 +15,7 @@
 		413CA72327B0DC4300461FE3 /* DayDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */; };
 		413CA72527B0DC7E00461FE3 /* DayForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */; };
 		D29586DB27B1ABF80013D8DF /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29586DA27B1ABF80013D8DF /* Day.swift */; };
+		D29586DD27B1AF130013D8DF /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29586DC27B1AF130013D8DF /* NetworkController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailsViewController.swift; sourceTree = "<group>"; };
 		413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayForcastTableViewCell.swift; sourceTree = "<group>"; };
 		D29586DA27B1ABF80013D8DF /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		D29586DC27B1AF130013D8DF /* NetworkController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 		D29586D827B1A7490013D8DF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D29586DC27B1AF130013D8DF /* NetworkController.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			files = (
 				413CA70727B0DA1C00461FE3 /* AppDelegate.swift in Sources */,
 				413CA72327B0DC4300461FE3 /* DayDetailsViewController.swift in Sources */,
+				D29586DD27B1AF130013D8DF /* NetworkController.swift in Sources */,
 				413CA70927B0DA1C00461FE3 /* SceneDelegate.swift in Sources */,
 				D29586DB27B1ABF80013D8DF /* Day.swift in Sources */,
 				413CA72527B0DC7E00461FE3 /* DayForcastTableViewCell.swift in Sources */,

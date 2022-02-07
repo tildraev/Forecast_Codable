@@ -78,13 +78,13 @@
                                 </subviews>
                             </stackView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGC-SY-7gd">
-                                <rect key="frame" x="20" y="277" width="374" height="537.5"/>
+                                <rect key="frame" x="20" y="267" width="374" height="493"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ttb-aE-wPY">
-                                    <rect key="frame" x="0.0" y="0.0" width="374" height="537.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="493"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JDc-2Y-LkP">
-                                            <rect key="frame" x="4" y="4" width="366" height="529"/>
+                                            <rect key="frame" x="4" y="4" width="366" height="485"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
@@ -140,6 +140,8 @@
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" red="0.99215686270000003" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <connections>
+                                                        <outlet property="dayNameLabel" destination="lIw-WJ-jKh" id="U7h-mG-1hM"/>
+                                                        <outlet property="forcastedHighLabel" destination="EgU-z0-CHa" id="bPg-pX-D9R"/>
                                                         <outlet property="iconImageView" destination="7lD-Ht-6X4" id="srp-nT-ji0"/>
                                                     </connections>
                                                 </tableViewCell>
@@ -172,9 +174,9 @@
                             <constraint firstItem="svK-ZT-dU8" firstAttribute="top" secondItem="8SY-N9-ei3" secondAttribute="bottom" constant="8" id="UBu-Cj-Yk2"/>
                             <constraint firstItem="F8h-FY-KLb" firstAttribute="trailing" secondItem="eGC-SY-7gd" secondAttribute="trailing" constant="20" id="UdC-Fi-SIE"/>
                             <constraint firstItem="eGC-SY-7gd" firstAttribute="leading" secondItem="F8h-FY-KLb" secondAttribute="leading" constant="20" id="do0-ON-IMf"/>
-                            <constraint firstItem="eGC-SY-7gd" firstAttribute="height" secondItem="rCG-S3-IHc" secondAttribute="height" multiplier="0.6" id="uxR-sd-vEc"/>
+                            <constraint firstItem="eGC-SY-7gd" firstAttribute="height" secondItem="rCG-S3-IHc" secondAttribute="height" multiplier="0.55" id="uxR-sd-vEc"/>
                             <constraint firstItem="F8h-FY-KLb" firstAttribute="trailing" secondItem="8SY-N9-ei3" secondAttribute="trailing" constant="20" id="wD6-qY-TjF"/>
-                            <constraint firstItem="eGC-SY-7gd" firstAttribute="top" secondItem="svK-ZT-dU8" secondAttribute="bottom" constant="20" id="yGJ-KQ-KsN"/>
+                            <constraint firstItem="eGC-SY-7gd" firstAttribute="top" secondItem="svK-ZT-dU8" secondAttribute="bottom" constant="10" id="yGJ-KQ-KsN"/>
                         </constraints>
                     </view>
                     <connections>
