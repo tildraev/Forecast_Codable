@@ -58,9 +58,9 @@
 		413CA70527B0DA1C00461FE3 /* Forecast_Codable */ = {
 			isa = PBXGroup;
 			children = (
-				413CA71D27B0DBCF00461FE3 /* Model */,
-				413CA71F27B0DBE100461FE3 /* Controller */,
+				D29586D427B1A5CB0013D8DF /* Model */,
 				413CA71E27B0DBDB00461FE3 /* View */,
+				D29586D527B1A5D00013D8DF /* Controller */,
 				413CA71A27B0DA5600461FE3 /* Supporting Files */,
 				413CA70C27B0DA1C00461FE3 /* Main.storyboard */,
 				413CA71127B0DA1F00461FE3 /* LaunchScreen.storyboard */,
@@ -79,13 +79,6 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		413CA71D27B0DBCF00461FE3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		413CA71E27B0DBDB00461FE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +88,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		413CA71F27B0DBE100461FE3 /* Controller */ = {
+		D29586D427B1A5CB0013D8DF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D29586D527B1A5D00013D8DF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
