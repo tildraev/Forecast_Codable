@@ -18,11 +18,11 @@ struct TopLevelDictionary: Decodable {
 
 struct Day: Decodable {
     private enum CodingKeys: String, CodingKey {
-        case temp = "temp"
+        case temp
         case highTemp = "high_temp"
         case lowTemp = "low_temp"
         case validDate = "valid_date"
-        case weather = "weather"
+        case weather
     }
     let temp: Double
     let highTemp: Double
@@ -33,7 +33,7 @@ struct Day: Decodable {
     
 struct Weather: Decodable {
     private enum CodingKeys: String, CodingKey {
-        case description = "description"
+        case description
         case iconString = "icon"
     
     }
