@@ -14,6 +14,7 @@
 		413CA71327B0DA1F00461FE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 413CA71127B0DA1F00461FE3 /* LaunchScreen.storyboard */; };
 		413CA72327B0DC4300461FE3 /* DayDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */; };
 		413CA72527B0DC7E00461FE3 /* DayForcastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */; };
+		D29586DB27B1ABF80013D8DF /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29586DA27B1ABF80013D8DF /* Day.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		413CA71427B0DA1F00461FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailsViewController.swift; sourceTree = "<group>"; };
 		413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayForcastTableViewCell.swift; sourceTree = "<group>"; };
+		D29586DA27B1ABF80013D8DF /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +60,10 @@
 		413CA70527B0DA1C00461FE3 /* Forecast_Codable */ = {
 			isa = PBXGroup;
 			children = (
-				D29586D427B1A5CB0013D8DF /* Model */,
-				413CA71E27B0DBDB00461FE3 /* View */,
-				D29586D527B1A5D00013D8DF /* Controller */,
+				D29586D427B1A5CB0013D8DF /* Models */,
+				413CA71E27B0DBDB00461FE3 /* Views */,
+				D29586D527B1A5D00013D8DF /* Controllers */,
 				413CA71A27B0DA5600461FE3 /* Supporting Files */,
-				413CA70C27B0DA1C00461FE3 /* Main.storyboard */,
-				413CA71127B0DA1F00461FE3 /* LaunchScreen.storyboard */,
 			);
 			path = Forecast_Codable;
 			sourceTree = "<group>";
@@ -71,6 +71,7 @@
 		413CA71A27B0DA5600461FE3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				413CA71127B0DA1F00461FE3 /* LaunchScreen.storyboard */,
 				413CA70627B0DA1C00461FE3 /* AppDelegate.swift */,
 				413CA70827B0DA1C00461FE3 /* SceneDelegate.swift */,
 				413CA70F27B0DA1F00461FE3 /* Assets.xcassets */,
@@ -79,27 +80,61 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		413CA71E27B0DBDB00461FE3 /* View */ = {
+		413CA71E27B0DBDB00461FE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				413CA70C27B0DA1C00461FE3 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D29586D427B1A5CB0013D8DF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D29586DA27B1ABF80013D8DF /* Day.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D29586D527B1A5D00013D8DF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D29586D727B1A7460013D8DF /* Model */,
+				D29586D627B1A7340013D8DF /* View */,
+				D29586D927B1A74C0013D8DF /* Cell */,
+				D29586D827B1A7490013D8DF /* Network */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D29586D627B1A7340013D8DF /* View */ = {
 			isa = PBXGroup;
 			children = (
 				413CA72227B0DC4300461FE3 /* DayDetailsViewController.swift */,
-				413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		D29586D427B1A5CB0013D8DF /* Model */ = {
+		D29586D727B1A7460013D8DF /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D29586D527B1A5D00013D8DF /* Controller */ = {
+		D29586D827B1A7490013D8DF /* Network */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Controller;
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D29586D927B1A74C0013D8DF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				413CA72427B0DC7E00461FE3 /* DayForcastTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +211,7 @@
 				413CA70727B0DA1C00461FE3 /* AppDelegate.swift in Sources */,
 				413CA72327B0DC4300461FE3 /* DayDetailsViewController.swift in Sources */,
 				413CA70927B0DA1C00461FE3 /* SceneDelegate.swift in Sources */,
+				D29586DB27B1ABF80013D8DF /* Day.swift in Sources */,
 				413CA72527B0DC7E00461FE3 /* DayForcastTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,8 @@ import UIKit
 
 class DayDetailsViewController: UIViewController {
     
+    //Api key cab12b2293ff4dbe83068be7f0ded509
+    
     //MARK: - Outlets
     @IBOutlet weak var dayForcastTableView: UITableView!
     @IBOutlet weak var cityNameLabel: UILabel!
@@ -22,6 +24,8 @@ class DayDetailsViewController: UIViewController {
     //MARK: - View Lifecyle
     override func viewDidLoad() {
         super.viewDidLoad()
+        dayForcastTableView.delegate = self
+        dayForcastTableView.dataSource = self
     }
     
     func updateViews() {
@@ -36,7 +40,7 @@ extension DayDetailsViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "dayC3ll", for: indexPath) as? DayForcastTableViewCell else {return UITableViewCell()}
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "dayCell", for: indexPath) as? DayForcastTableViewCell else {return UITableViewCell()}
         
         return cell
     }
